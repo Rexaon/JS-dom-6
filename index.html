@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="">
+            <form>
+                Velg din farge :) <br>
+                <select id="mySelect">
+                  <option>Her er det flere farger</option>
+                  <option>#9FE2BF</option>
+                  <option>#40E0D0</option>
+                  <option>#6495ED</option>
+                  <option>#CCCCFF</option>
+                  <option>#FFA07A</option>
+                  <option>#DE3163</option>
+                </select>
+                <br><br>
+                <input id="velg" type="button" value="Velg en av dem!">    
+            </form>
+            <p id="min_valg">Har du valgt en av dem?</p>
+        </div>
+    </div>
+
+    <input type="color" id="favcolor" value="#ff0000" onchange="favColor">
+
+
+    <h2 id="hexdisplay">#000000</h2>
+    <form>
+        <label for="red">Rød</label>
+        <input type="range" min="0" max="255" step="1" value="0" id="red" onchange="changeBackground">
+
+        <label for="green">Grønn</label>
+        <input type="range" min="0" max="255" step="1" value="0" id="green" " onchange="changeBackground">
+
+        <label for="blue">Blå</label>
+        <input type="range" min="0" max="255" step="1" value="0" id="blue"  onchange="changeBackground">
+    </form>
+    
+    
+</body>
+</html>
